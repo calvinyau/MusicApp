@@ -1,0 +1,19 @@
+<h1>New User</h1>
+
+<%= link_to "Sign in!", new_session_url %>
+
+<p><strong>Don't want to make an account? Try our demo account:</strong></p>
+<p>Username: appacademy@example.com, Password: password</p>
+<br>
+<form action="/users" method="post">
+  <%= auth_token %>
+  <label for="email">Email</label>
+  <input type="text" name="user[email]" value="">
+  <br>
+
+  <label for="password">Password</label>
+  <input type="text" name="user[password]" value="">
+  <br>
+
+  <input type="submit" name="submit" value="Submit">
+</form>

@@ -1,0 +1,11 @@
+<br>
+<%= link_to "Back to All Bands", bands_url %>
+
+<h1>Bands</h1>
+
+<% @bands = Band.all %>
+<%=  render @bands %>
+
+<br>
+
+<%= link_to "New Band", new_band_url %>
